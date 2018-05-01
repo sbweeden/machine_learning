@@ -1,0 +1,7 @@
+% This is a comment
+A=[1,2; 3,4]
+B=transpose(A)
+A
+B
+A*B
+

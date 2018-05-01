@@ -1,0 +1,27 @@
+% Tests related to understanding week 2 material
+
+X = [ 1,2104,5,1,45; 
+      1,1416,3,2,40; 
+      1,1534,3,2,30;
+      1,852,2,1,36 ];
+
+y = [ 460;
+      232;
+      315;
+      178 ];
+
+% Display X and y
+X
+y
+disp("transpose(X)");
+transpose(X)
+
+% Normal equation method (for approx 10K features or less). These two are equivalent in octave.
+theta=pinv(transpose(X) * X) * transpose(X) * y
+theta2=pinv(X'*X)*X'*y
+theta
+theta2
+
+% Identity matrix
+A = eye(5);
+A
